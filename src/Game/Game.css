@@ -1,0 +1,40 @@
+.container-fluid {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .three-head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .center-images img {
+    width: 150px;
+    margin-bottom: 20px;
+  }
+  
+  .both-side-images {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .left-side-image img,
+  .right-side-image img {
+    width: 100px;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  h2 {
+    color: #666;
+  }
+  
+  span {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #900c3f;
+  }
+  
