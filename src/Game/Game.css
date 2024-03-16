@@ -1,28 +1,66 @@
 .container-fluid {
     text-align: center;
     margin-top: 50px;
+    width: 100%;
+    height: 100vh;
+    
   }
+  .title-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffffda; 
+    z-index: 1000;
+}
+.three-head{
+  margin-top: 100px;
+}
   
-  .three-head {
+  .center-images{
     display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
+    justify-content: space-around;
+    align-items: center;
   }
-  
   .center-images img {
     width: 150px;
-    margin-bottom: 20px;
-  }
+    margin-top:30px;
+    margin-bottom: 10px;
+    border-radius: 50%;
+    transition: transform 0.7s ease; /* Add transition for smooth effect */
+}
+
+.center-images img:hover {
+    transform: rotatex(180deg); /* Rotate 180 degrees on hover */
+  
+}
+
   
   .both-side-images {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    align-items: center;
   }
   
   .left-side-image img,
   .right-side-image img {
-    width: 100px;
+    margin-left: 80px;
+    margin-right: 100px;
+      width: 150px;
+      border-radius: 40%;
+      transition: transform 0.8s ease, background-color 0.3s ease; /* Add transition for smooth effect */
   }
+  
+  
+  .right-side-image img:hover {
+      transform: rotatey(180deg); /* Rotate 180 degrees on hover */
+      background-color: #f0f0f0; /* Change background color on hover */
+  }
+  .left-side-image img:hover{
+    transform: rotate(180deg); /* Rotate 180 degrees on hover */
+    background-color: #f0f0f0; /* Change background color on hover */
+  }
+  
   
   h1 {
     color: #333;
